@@ -22,7 +22,7 @@ const App = props => (
           title: "React example",
           composition: [<ReactExample />]
         },
-        { type: "external", title: "Github", link: "https://github.com/fa-repo" }
+        { type: "external", title: "Github", link: "https://github.com/fa-repo/undo-redo" }
       ]}
     />
   </>
