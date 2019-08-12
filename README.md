@@ -55,7 +55,7 @@ undoRedo.canRedo();
 ```
 
 ## Docs / examples
-Discover api and use cases [here](/docs).
+Discover api and use cases [here](https://fa-repo.github.io/undo-redo/#/docs).
 
 ## License
 
