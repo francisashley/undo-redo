@@ -109,7 +109,9 @@ class ReactExample extends React.Component {
           </div>
         </div>
         <h3>
-          <a href="#">Source code</a>
+          <a href="https://github.com/fa-repo/undo-redo/tree/master/examples/src/ReactExample">
+            Source code
+          </a>
         </h3>
         <WarningNote title="Take note when using undoRedo.select()">
           <p>
