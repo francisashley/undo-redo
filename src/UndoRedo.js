@@ -1,4 +1,4 @@
-import _ from "lodash";
+import slice from "array-slice";
 
 class UndoRedo {
   historyStack = [];
@@ -16,7 +16,7 @@ class UndoRedo {
     const action = { annotation, redo, undo };
 
     // Remove all actions after the current historyIndex
-    let historyStack = _.slice(this.historyStack, 0, nextHistoryIndex);
+    let historyStack = slice(this.historyStack, 0, nextHistoryIndex);
     historyStack = [...historyStack, action];
 
     // Update state
@@ -46,7 +46,7 @@ class UndoRedo {
   undoTo = index => {
     if (this.canUndo() && index < this.historyIndex) {
       // Select historyStack between target index and current index
-      let historyStack = _.slice(this.historyStack, index + 1, this.historyIndex + 1);
+      let historyStack = slice(this.historyStack, index + 1, this.historyIndex + 1);
 
       // Reverse historyStack so as to call each action in the right order
       historyStack = historyStack.reverse();
@@ -79,7 +79,7 @@ class UndoRedo {
   redoTo = index => {
     if (this.canRedo() && index > this.historyIndex) {
       // Select historyStack between current index and target index
-      const historyStack = _.slice(this.historyStack, this.historyIndex + 1, index + 1);
+      const historyStack = slice(this.historyStack, this.historyIndex + 1, index + 1);
 
       // Call each action
       // historyStack.map((action, i) => setTimeout(() => action.redo(), 1));
