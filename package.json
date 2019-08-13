@@ -23,7 +23,8 @@
     "publish:patch": "npm version patch && npm publish",
     "publish:minor": "npm version minor && npm publish",
     "publish:major": "npm version major && npm publish",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "analyse": "npm run build && npx source-map-explorer ./dist/index.js"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
@@ -62,7 +63,8 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-url": "^2.2.2"
+    "rollup-plugin-url": "^2.2.2",
+    "source-map-explorer": "^2.0.1"
   },
   "files": [
     "dist"
