@@ -1,20 +1,15 @@
 {
   "name": "@fa-repo/undo-redo-examples",
-  "homepage": "https://@fa-repo.github.io/@fa-repo/undo-redo",
+  "homepage": "https://@fa-repo.github.io/undo-redo",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@fa-repo/shard-docs": "^0.2.1",
-    "@fa-repo/undo-redo": "file:..",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "^3.0.1"
-  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "scripts": {
-    "start": "npx react-scripts start",
-    "build": "npx react-scripts build",
-    "test": "npx react-scripts test",
-    "eject": "npx react-scripts eject",
     "serve": "npx serve ./public -l 2020 --single",
     "dev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -22,12 +17,12 @@
     "production": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "analyse": "npm run production && npx source-map-explorer ./public/examples.js"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "dependencies": {
+    "@fa-repo/shard-docs": "^0.2.1",
+    "@fa-repo/undo-redo": "file:..",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
   "devDependencies": {
     "cross-env": "^5.2.0",
     "laravel-mix": "^4.1.2",
