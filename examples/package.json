@@ -18,7 +18,7 @@
     "analyse": "npm run production && npx source-map-explorer ./public/examples.js"
   },
   "devDependencies": {
-    "@fa-repo/shard-docs": "^0.2.3",
+    "@fa-repo/shard-docs": "^1.1.1",
     "@fa-repo/undo-redo": "file:..",
     "autoprefixer-loader": "^3.2.0",
     "cross-env": "^5.2.0",

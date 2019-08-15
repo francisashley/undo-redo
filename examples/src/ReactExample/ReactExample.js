@@ -5,7 +5,7 @@ import ColourfulList from "./ColourfulList";
 import arrayMove from "array-move";
 import UndoRedo from "@fa-repo/undo-redo";
 import HistoryList from "./HistoryList";
-import { MarkdownShard } from "@fa-repo/shard-docs";
+import MarkdownShard from "@fa-repo/shard-docs/dist/shards/markdown-shard";
 import WarningNote from "./WarningNote";
 import "./ReactExample.scss";
 
