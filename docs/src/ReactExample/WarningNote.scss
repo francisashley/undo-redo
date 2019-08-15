@@ -1,0 +1,22 @@
+.warning-note {
+  background: rgba(255, 193, 7, 0.2);
+  border: thin solid rgba(255, 193, 7, 0.2);
+  padding: 5px 45px;
+  position: relative;
+  font-size: 14px;
+  border-radius: 4px;
+  .icon {
+    position: absolute;
+    color: #ffc107;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    left: 8px;
+    top: 9px;
+  }
+  h2 {
+    font-weight: 300 !important;
+    margin: 3px 0;
+    color: #212121;
+  }
+}
