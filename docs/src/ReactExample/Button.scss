@@ -1,0 +1,25 @@
+.button {
+  vertical-align: text-bottom;
+  border-radius: 2px;
+  padding: 2px 5px;
+  font-size: 11px;
+  border: thin solid black;
+  outline: 0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 150ms ease-out, color 150ms ease-out;
+
+  &:focus {
+    border: thin solid #2196f3;
+  }
+
+  &:active {
+    background: #1e2124;
+    color: white;
+  }
+
+  &:disabled {
+    border-color: rgba(0, 0, 0, 0.4);
+    cursor: default;
+  }
+}
