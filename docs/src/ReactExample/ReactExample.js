@@ -108,11 +108,16 @@ class ReactExample extends React.Component {
             />
           </div>
         </div>
-        <h3>
-          <a href="https://github.com/fa-repo/undo-redo/tree/master/examples/src/ReactExample">
-            Source code
-          </a>
-        </h3>
+
+        <br />
+        <a
+          href="https://github.com/fa-repo/undo-redo/tree/master/examples/src/ReactExample"
+          target="_blank"
+        >
+          Source code
+        </a>
+        <br />
+
         <WarningNote title="Take note when using undoRedo.select()">
           <p>
             UndoRedo encounters a problem in reactJS when attempting to .select() a point in time 2
@@ -132,6 +137,7 @@ class ReactExample extends React.Component {
  () => this.setState(({ items: purgeArray(this.state.items, index) }))`}
           </pre>
         </WarningNote>
+
         <MarkdownShard
           markdown={`
 \`\`\`js
