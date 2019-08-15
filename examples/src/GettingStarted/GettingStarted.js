@@ -1,5 +1,5 @@
 import React from "react";
-import { MarkdownShard } from "@fa-repo/shard-docs";
+import MarkdownShard from "@fa-repo/shard-docs/dist/shards/markdown-shard";
 
 /**
  * GettingStarted
