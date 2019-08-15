@@ -8,24 +8,23 @@ import MarkdownShard from "@fa-repo/shard-docs/dist/shards/markdown-shard";
 
 const APIReference = props => (
   <MarkdownShard
-    markdown={`## undoRedo.add({ annotation, undo, redo })
+    markdown={`## undoRedo.add(annotation, { undo, redo })
 Add an action to undoRedo history.
-| Name  | Type  | Required | Description  |
-|-------|-------|----------|--------------|
-| do    | function  | Required | The function that is called when moving forward through history. |
-| undo  | function  | Required |  The function that is called when moving back through history.   |
-| annotation  | string | Recommended      | A description of the current action. This could help with debugging or used in a visual representation history picker type thing (see examples).        |
-| ...  |  |  |  Anything else can go in this object and accessed later after crawling undoRedo.stack(). |
+| Name       | Type     | Required | Description  |
+|------------|----------|----------|--------------|
+| annotation | string   | Required | A description of the current action. Useful for debugging or outputted in a visual representation history visualiser type thing (see react example).        |
+| do         | function | Required | Perform a task. Called once by undoRedo.add() then subsequentally by undoRedo.redo().  |
+| undo       | function | Required | Reverse changes performed by \`do()\`. |
+| ...        |          |          | Anything else can go in this object and accessed later after crawling undoRedo.stack(). |
 
 #### Example
 \`\`\`js
 let items = ['apple', 'pear', 'mango'];
 
 const moveItems = (from, to) => {
-  undoRedo.add({
+  undoRedo.add(\`Move item from $\{from} to $\{to}\`, {
     do: () => arrayMove(items, from, to),
-    undo:() => arrayMove(items, to, from),
-    annotation: \`Move item from $\{from} to $\{to}\`
+    undo:() => arrayMove(items, to, from)
   });
 }
 \`\`\`

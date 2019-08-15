@@ -27,7 +27,7 @@ let items = ['apple', 'pear', 'mango'];
 const undoRedo = new UndoRedo();
 
 const moveItem = (from, to) => {
-  undoRedo.add({
+  undoRedo.add(\`Move item from \${from} to \${to}\`, {
     do: () => arrayMove(items, from, to),
     undo:() => arrayMove(items, to, from),
   })
