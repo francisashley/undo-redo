@@ -24,8 +24,8 @@
     "publish:patch": "npm version patch && npm publish",
     "publish:minor": "npm version minor && npm publish",
     "publish:major": "npm version major && npm publish",
-    "predeploy": "cd examples && npm install && npm run production",
-    "deploy": "npx gh-pages -d examples/public",
+    "predeploy": "cd docs && npm install && npm run production",
+    "deploy": "npx gh-pages -d docs/public",
     "analyse": "npm run build && npx source-map-explorer ./dist/index.js"
   },
   "devDependencies": {
