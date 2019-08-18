@@ -1,6 +1,6 @@
 {
   "name": "@fa-repo/undo-redo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A javascript package to handle basic undo/redo functionality",
   "author": "@fa-repo",
   "license": "mit",
