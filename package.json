@@ -4,7 +4,7 @@
   "description": "A javascript package to handle basic undo/redo functionality",
   "author": "@fa-repo",
   "license": "mit",
-  "repository": "@fa-repo/undo-redo",
+  "repository": "fa-repo/undo-redo",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
