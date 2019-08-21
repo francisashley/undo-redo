@@ -14,15 +14,16 @@ const Docs = props => (
   <>
     <ShardDocs
       title="@fa-repo/undo-redo documentation"
-      structure={[
-        { type: "page", title: "Getting started", composition: [<GettingStarted />] },
-        { type: "page", title: "API reference", composition: [<APIReference />] },
+      tree={[
         {
-          type: "page",
-          title: "React example",
-          composition: [<ReactExample />]
-        },
-        { type: "external", title: "Github", link: "https://github.com/fa-repo/undo-redo" }
+          group: "Docs",
+          pages: [
+            { page: "Getting started", composition: [<GettingStarted />] },
+            { page: "API reference", composition: [<APIReference />] },
+            { page: "React example", composition: [<ReactExample />] },
+            { external: "Github", link: "https://github.com/fa-repo/undo-redo" }
+          ]
+        }
       ]}
     />
   </>
