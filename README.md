@@ -37,7 +37,7 @@ const redoChanges = () => {
 ```
 
 ## Docs / examples
-Discover api and use cases [here](https://skystash.github.io/undo-redo/#/docs).
+Discover api and use cases [here](https://skystash.github.io/undo-redo/#/).
 
 ## License
 
