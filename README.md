@@ -1,13 +1,18 @@
-# @fa-repo/undo-redo
+<div align="center">
 
-> A javascript package for handling basic undo/redo functionality
+# Undo/Redo
+
+A javascript package for handling undo/redo functionality<br/>
+
+[Read the docs](https://skystash.github.io/undo-redo/#/)<br/>
 
 [![NPM](https://img.shields.io/npm/v/@fa-repo/undo-redo.svg)](https://www.npmjs.com/package/@fa-repo/undo-redo)
+</div>
 
 ## Install
 
 ```bash
-npm install --save @fa-repo/undo-redo
+yarn add @fa-repo/undo-redo
 ```
 
 ## Basic usage
@@ -36,9 +41,6 @@ const redoChanges = () => {
 }
 ```
 
-## Docs / examples
-Discover api and use cases [here](https://skystash.github.io/undo-redo/#/).
-
 ## License
 
-mit © [@fa-repo](https://github.com/@fa-repo)
+MIT
