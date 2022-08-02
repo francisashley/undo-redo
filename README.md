@@ -2,7 +2,7 @@
 
 # Undo/Redo
 
-A javascript package for handling undo/redo functionality<br/>
+A javascript package for handling undo/redo functionality.<br/>
 
 [Read the docs](https://skystash.github.io/undo-redo/#/)<br/>
 
@@ -12,7 +12,7 @@ A javascript package for handling undo/redo functionality<br/>
 ## Install
 
 ```bash
-yarn add @fa-repo/undo-redo
+yarn add @fa-repo/undo-redo --dev
 ```
 
 ## Basic usage
