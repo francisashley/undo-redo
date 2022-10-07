@@ -4,7 +4,7 @@
 
 A javascript package for handling undo/redo functionality.<br/>
 
-[Read the docs](https://skystash.github.io/undo-redo/#/)<br/>
+[Read the docs](https://francisashley.github.io/undo-redo/#/)<br/>
 
 [![NPM](https://img.shields.io/npm/v/@fa-repo/undo-redo.svg)](https://www.npmjs.com/package/@fa-repo/undo-redo)
 </div>
